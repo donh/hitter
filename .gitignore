@@ -18,7 +18,15 @@
 .Trashes
 Icon?
 ehthumbs.db
-Thumbs.db
+#Thumbs.db
+
+#Windows-specific
+# Windows image file caches
+Thumbs.db 
+.DS_Store
+# Folder config file
+Desktop.ini
+#end Windows-specific
 
 # Github Default #
 tmp/*
@@ -28,3 +36,37 @@ app/tmp/*
 app/[Cc]onfig/core.php
 app/[Cc]onfig/database.php
 !empty
+
+#Eclipse-specific
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+#end Eclipse-specific
+/clover.xml
+/test.log
+
+#PhpStorm-specific
+.idea/
