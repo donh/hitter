@@ -3,8 +3,13 @@
 /app/Config/database.php
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
+<<<<<<< HEAD
+/plugins
+/vendors
+=======
 #/plugins
 #/vendors
+>>>>>>> d8d59535298dfa5de8bb79033edaf5d5baf8518c
 /build
 /dist
 /tags
@@ -18,6 +23,9 @@
 .Trashes
 Icon?
 ehthumbs.db
+<<<<<<< HEAD
+Thumbs.db
+=======
 #Thumbs.db
 
 #Windows-specific
@@ -27,6 +35,7 @@ Thumbs.db
 # Folder config file
 Desktop.ini
 #end Windows-specific
+>>>>>>> d8d59535298dfa5de8bb79033edaf5d5baf8518c
 
 # Github Default #
 tmp/*
