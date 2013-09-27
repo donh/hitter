@@ -3,8 +3,13 @@
 /app/Config/database.php
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
+<<<<<<< HEAD
 /plugins
 /vendors
+=======
+#/plugins
+#/vendors
+>>>>>>> d8d59535298dfa5de8bb79033edaf5d5baf8518c
 /build
 /dist
 /tags
@@ -18,7 +23,19 @@
 .Trashes
 Icon?
 ehthumbs.db
+<<<<<<< HEAD
 Thumbs.db
+=======
+#Thumbs.db
+
+#Windows-specific
+# Windows image file caches
+Thumbs.db 
+.DS_Store
+# Folder config file
+Desktop.ini
+#end Windows-specific
+>>>>>>> d8d59535298dfa5de8bb79033edaf5d5baf8518c
 
 # Github Default #
 tmp/*
@@ -28,3 +45,37 @@ app/tmp/*
 app/[Cc]onfig/core.php
 app/[Cc]onfig/database.php
 !empty
+
+#Eclipse-specific
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+#end Eclipse-specific
+/clover.xml
+/test.log
+
+#PhpStorm-specific
+.idea/
