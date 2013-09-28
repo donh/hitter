@@ -24,7 +24,7 @@ App::uses('Debugger', 'Utility');
 ?>
 <center><h2>Hello World!</h2></center>
 <center><h3>Quick Hitter</h3></center>
-<center><a href="/phpinfo.php">Demo</a></center>
+<center><a href="/home">Demo</a></center>
 <h2><?php echo __d('cake_dev', 'Release Notes for CakePHP %s.', Configure::version()); ?></h2>
 <p>
 	<a href="http://cakephp.org/changelogs/<?php echo Configure::version(); ?>"><?php echo __d('cake_dev', 'Read the changelog'); ?> </a>
