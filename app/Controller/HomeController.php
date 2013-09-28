@@ -30,8 +30,8 @@ class HomeController extends AppController {
 	* @called by:		front end
 	*/
 	public function index() {
-		$this->set(compact('page', 'subpage', 'title_for_layout'));
-
+		//$this->set(compact('page', 'subpage', 'title_for_layout'));
+		/*
 		try {
 			$this->render(implode('/', $path));
 		} catch (MissingViewException $e) {
@@ -40,6 +40,7 @@ class HomeController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+		*/
 	}
 
 
