@@ -69,7 +69,19 @@ class DATABASE_CONFIG {
 		'password' => '9jDmUY6nBTDK8QXw',
 		'database' => 'yahoohack',
 		'prefix' => '',
-		//'encoding' => 'utf8',
+		'encoding' => 'utf8',
+	);
+
+
+	// the config for MongoDB
+	public $mongodb = array(
+		'datasource' => 'Mongodb.MongodbSource',
+		//'database' => 'blog',
+		'database' => 'hitter',
+		'host' => 'localhost',
+		'port' => 27017,
+		'prefix' => '',
+		'encoding' => 'utf8'
 	);
 
 	public $test = array(
