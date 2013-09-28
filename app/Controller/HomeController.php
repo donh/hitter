@@ -20,7 +20,7 @@ class PagesController extends AppController {
 	/**
 	* @function name:	public function index()
 	* @description:		This function renders homepage.
-	* @related issues:	hitter-1
+	* @related issues:	QH-1
 	* @param:			string $rid
 	* @param:			string $locale
 	* @return:			array $offers
