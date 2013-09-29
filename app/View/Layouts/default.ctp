@@ -30,7 +30,7 @@ $hitterDescription = __d('hitter_dev', 'Quick Hitter: the almighty electronic bu
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		//echo $this->Html->css('cake.generic');
 		//echo $this->Html->css('base-min.css');
 		echo $this->Html->css('pure-min.css');
 		// <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
