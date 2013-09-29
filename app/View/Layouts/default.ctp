@@ -1,22 +1,7 @@
 <?php
 /**
  *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
 $hitterDescription = __d('hitter_dev', 'Quick Hitter: the almighty electronic business card');
 ?>
 <!DOCTYPE html>
@@ -24,11 +9,16 @@ $hitterDescription = __d('hitter_dev', 'Quick Hitter: the almighty electronic bu
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $hitterDescription ?>:
-		<?php echo $title_for_layout; ?>
+		<?php
+			echo $hitterDescription
+			//echo $title_for_layout;
+		?>
 	</title>
+	<!--
+	<link rel="stylesheet" type="text/css" href="css/pure-min.css">
+	-->
 	<?php
-		echo $this->Html->meta('icon');
+		//echo $this->Html->meta('icon');
 
 		//echo $this->Html->css('cake.generic');
 		//echo $this->Html->css('base-min.css');
