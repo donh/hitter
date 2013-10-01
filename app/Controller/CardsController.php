@@ -36,6 +36,7 @@ class CardsController extends AppController {
 		if (is_array($card) && count($card)) {
 			$id = $this->Card->creatCard($card);
 			debug($id);
+			$this->show($id);
 		}
 		
 		//$this->set(compact('page', 'subpage', 'title_for_layout'));
@@ -50,6 +51,27 @@ class CardsController extends AppController {
 		}
 		*/
 	}
+
+
+
+	/**
+	* @function name:	public function show()
+	* @description:		This function renders homepage.
+	* @related issues:	QH-1
+	* @param:			string $rid
+	* @param:			string $locale
+	* @return:			array $offers
+	* @author:			Don Hsieh
+	* @since:			10/01/2013
+	* @last modified: 	10/01/2013
+	* @called by:		front end
+	*/
+	public function show($id) {
+		$card = $this->Card->getCard($id);
+		debug($card);//exit;
+		$this->set('card', $card);
+	}
+
 
 
 /**

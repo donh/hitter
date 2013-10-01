@@ -17,7 +17,7 @@ class Card extends AppModel {
 	* @called by:		
 	*/
 	public function getCard($id) {
-		$card = null;
+		$card = $this->findById($id);
 		return $card;
 	}
 
