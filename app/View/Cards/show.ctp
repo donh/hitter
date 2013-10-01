@@ -18,7 +18,6 @@ array(
 <table class="pure-table pure-table-horizontal">
 	<thead>
 		<tr>
-			<th>#</th>
 			<th>ID</th>
 			<th>Name</th>
 			<th>Gender</th>
