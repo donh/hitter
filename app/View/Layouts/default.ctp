@@ -24,6 +24,7 @@ $hitterDescription = __d('hitter_dev', 'Quick Hitter: the almighty electronic bu
 		//echo $this->Html->css('base-min.css');
 		echo $this->Html->css('pure-min.css');
 		// <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+		echo $this->Html->script('jquery-2.0.3');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
