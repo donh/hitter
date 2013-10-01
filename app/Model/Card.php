@@ -1,6 +1,6 @@
 <?php
 class Card extends AppModel {
-	public $name = 'User';
+	public $name = 'Card';
 	public $primaryKey = 'id';
 	public $displayField = 'name';
 
