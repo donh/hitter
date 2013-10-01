@@ -18,7 +18,7 @@ class Card extends AppModel {
 	*/
 	public function getCard($id) {
 		$card = $this->findById($id);
-		return $card;
+		return $card['Card'];
 	}
 
 
