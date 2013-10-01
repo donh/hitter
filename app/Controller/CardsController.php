@@ -32,11 +32,12 @@ class CardsController extends AppController {
 	public function add() {
 		//debug($this->request->data);//exit;
 		$card = $this->request->data;
-		debug($card);//exit;
+		//debug($card);//exit;
 		if (is_array($card) && count($card)) {
 			$id = $this->Card->creatCard($card);
-			debug($id);
-			$this->show($id);
+			//debug($id);
+			$this->redirect('/cards/show/'.$id);
+			//$this->show($id);
 		}
 		
 		//$this->set(compact('page', 'subpage', 'title_for_layout'));
@@ -68,7 +69,7 @@ class CardsController extends AppController {
 	*/
 	public function show($id) {
 		$card = $this->Card->getCard($id);
-		debug($card);//exit;
+		//debug($card);//exit;
 		$this->set('card', $card);
 	}
 
