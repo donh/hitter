@@ -15,10 +15,8 @@ array(
 )
 */
 ?>
-<div class="pure-u-1-3">
-</div>
 
-<div class="pure-u-1-3">
+<cneter>
 <table class="pure-table pure-table-horizontal">
 	<thead>
 		<tr>
@@ -43,7 +41,4 @@ array(
 		</tr>
 	</tbody>
 </table>
-</div>
-
-<div class="pure-u-1-3">
-</div>
+</cneter>
