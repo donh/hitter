@@ -14,7 +14,7 @@ class CardsController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+	public $uses = array('Card');
 
 
 	/**
@@ -30,8 +30,13 @@ class CardsController extends AppController {
 	* @called by:		front end
 	*/
 	public function add() {
-		debug($this->request->data);//exit;
-		//debug($this->request);
+		//debug($this->request->data);//exit;
+		$card = $this->request->data;
+		debug($card);//exit;
+		if (is_array($card) && count($card)) {
+			$id = $this->Card->creatCard($card);
+			debug($id);
+		}
 		
 		//$this->set(compact('page', 'subpage', 'title_for_layout'));
 		/*

@@ -50,12 +50,12 @@ App::uses('Debugger', 'Utility');
 
 			<label for="phone">Phone</label>
 			<input id="phone" type="" placeholder="Phone" name="data[Card][phone]">
-
+<!--
 			<label for="password">Password</label>
 			<input id="password" type="password" placeholder="Password" name="data[Card][password]">
-
-			<label for="sex">Sex</label>
-			<select id="sex" name="data[Card][sex]">
+-->
+			<label for="gender">Gender</label>
+			<select id="gender" name="data[Card][gender]">
 				<option>M</option>
 				<option>F</option>
 			</select>
