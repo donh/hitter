@@ -67,7 +67,7 @@ class CardsController extends AppController {
 	* @last modified: 	10/02/2013
 	* @called by:		front end
 	*/
-	public function show($id) {
+	public function show($id=null) {
 		if (empty($id)) $id = @$this->request->params['cardId'];
 		if (is_numeric($id)) {
 			$card = $this->Card->getCard($id);
