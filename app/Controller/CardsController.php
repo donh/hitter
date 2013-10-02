@@ -64,13 +64,16 @@ class CardsController extends AppController {
 	* @return:			array $offers
 	* @author:			Don Hsieh
 	* @since:			10/01/2013
-	* @last modified: 	10/01/2013
+	* @last modified: 	10/02/2013
 	* @called by:		front end
 	*/
 	public function show($id) {
-		$card = $this->Card->getCard($id);
-		//debug($card);//exit;
-		$this->set('card', $card);
+		if (empty($id)) $id = @$this->request->params['cardId'];
+		if (is_numeric($id)) {
+			$card = $this->Card->getCard($id);
+			//debug($card);//exit;
+			$this->set('card', $card);
+		}
 	}
 
 
