@@ -60,6 +60,19 @@ App::uses('Debugger', 'Utility');
 				<option>F</option>
 			</select>
 
+			<label for="type">Type</label>
+			<select id="type" name="data[Card][type]">
+				<option>Analyst</option>
+				<option>Banker</option>
+				<option>Consultant</option>
+				<option>Designer</option>
+				<option>Doctor</option>
+				<option>Engineer</option>
+				<option>Lawyer</option>
+				<option>Manager</option>
+				<option>Sales</option>
+			</select>
+
 			<button type="submit" class="pure-button pure-button-primary">Submit</button>
 		</fieldset>
 	</form>
