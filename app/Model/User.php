@@ -17,22 +17,22 @@ class User extends AppModel {
 	* @called by:		
 	*/
 	public function getCardsByUsername($username) {
-		debug($username);
+		//debug($username);
 		$user = $this->findByUsername($username);
-		debug($user);
+		//debug($user);
 		$strCardIds = @$user['User']['cards'];
-		debug($strCardIds);
+		//debug($strCardIds);
 		$cardIds = explode(',', $strCardIds);
-		debug($cardIds);
+		//debug($cardIds);
 		$objCard = ClassRegistry::init('Card');
 
-		$cards = array();
+		//$cards = array();
 		foreach ($cardIds as $key => $cardId) {
 			$card = $objCard->getCard($cardId);
 			debug($card);
 			$cards[] = $card;
 		}
-		debug($cards);
+		//debug($cards);
 		return $cards;
 	}
 

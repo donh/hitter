@@ -74,7 +74,8 @@ class CardsController extends AppController {
 			//debug($card);//exit;
 			$this->set('card', $card);
 		} elseif (isset($id)) {
-			$card = $this->User->getCardsByUsername($id);
+			$cards = $this->User->getCardsByUsername($id);
+			$this->set('cards', $cards);
 		}
 	}
 
