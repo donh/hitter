@@ -26,7 +26,6 @@ class User extends AppModel {
 		debug($cardIds);
 		$objCard = ClassRegistry::init('Card');
 
-
 		$cards = array();
 		foreach ($cardIds as $key => $cardId) {
 			$card = $objCard->getCard($cardId);
@@ -50,7 +49,7 @@ class User extends AppModel {
 	* @called by:		
 	*/
 	public function getUser($id) {
-		$user = null
+		$user = null;
 		return $user;
 	}
 }
