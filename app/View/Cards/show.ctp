@@ -23,6 +23,7 @@ array(
 			<th>ID</th>
 			<th>Name</th>
 			<th>Gender</th>
+			<th>Type</th>
 			<th>Position</th>
 			<th>Company</th>
 			<th>Email</th>
