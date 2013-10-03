@@ -16,9 +16,25 @@ class User extends AppModel {
 	* @last modified: 	10/03/2013
 	* @called by:		
 	*/
-	public function getUserByUsername($username) {
-		$user = null
-		return $user;
+	public function getCardsByUsername($username) {
+		debug($username);
+		$user = $this->findByUsername($username);
+		debug($user);
+		$strCardIds = $user->field('cards');
+		debug($strCardIds);
+		$cardIds = explode(',', $strCardIds);
+		debug($cardIds);
+		$objCard = ClassRegistry::init('Card');
+
+
+		$cards = array();
+		foreach ($cardIds as $key => $cardId) {
+			$card = $objCard->getCard($cardId);
+			debug($card);
+			$cards[] = $card;
+		}
+		debug($cards);
+		return $cards;
 	}
 
 
