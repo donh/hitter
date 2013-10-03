@@ -29,7 +29,7 @@ class User extends AppModel {
 		//$cards = array();
 		foreach ($cardIds as $key => $cardId) {
 			$card = $objCard->getCard($cardId);
-			debug($card);
+			//debug($card);
 			$cards[] = $card;
 		}
 		//debug($cards);

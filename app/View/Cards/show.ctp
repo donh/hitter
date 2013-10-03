@@ -16,8 +16,6 @@ array(
 */
 
 if (isset($card)) {
-	# code...
-}
 ?>
 
 <cneter>
