@@ -20,7 +20,7 @@ class User extends AppModel {
 		debug($username);
 		$user = $this->findByUsername($username);
 		debug($user);
-		$strCardIds = @$user['User']['cards');
+		$strCardIds = @$user['User']['cards'];
 		debug($strCardIds);
 		$cardIds = explode(',', $strCardIds);
 		debug($cardIds);
