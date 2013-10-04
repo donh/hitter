@@ -16,7 +16,7 @@ array(
 */
 
 if (isset($card)) {
-	debug($card);
+	//debug($card);
 ?>
 
 <cneter>

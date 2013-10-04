@@ -64,7 +64,7 @@ class CardsController extends AppController {
 	* @return:			array $offers
 	* @author:			Don Hsieh
 	* @since:			10/01/2013
-	* @last modified: 	10/03/2013
+	* @last modified: 	10/04/2013
 	* @called by:		front end
 	*/
 	public function show($id=null) {
@@ -72,11 +72,12 @@ class CardsController extends AppController {
 		if (is_numeric($id)) {
 			$card = $this->Card->getCard($id);
 			//debug($card);//exit;
-			$this->set('card', $card);
+			//$this->set('card', $card);
+			$cards[0] = $card;
 		} elseif (isset($id)) {
 			$cards = $this->User->getCardsByUsername($id);
-			$this->set('cards', $cards);
 		}
+		$this->set('cards', $cards);
 	}
 
 
