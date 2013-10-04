@@ -67,6 +67,7 @@ class CardsController extends AppController {
 	* @called by:		front end
 	*/
 	public function show($input=null) {
+		$cards = array();
 		if (empty($input)) $input = @$this->request->params['input'];
 		if (is_numeric($input)) {
 			$cardId = $input;

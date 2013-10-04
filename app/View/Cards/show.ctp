@@ -1,5 +1,5 @@
 <?php
-//debug($card);//exit;
+//debug($cards);//exit;
 /*
 array(
 	'Card' => array(
@@ -14,74 +14,35 @@ array(
 	)
 )
 */
-
-if (isset($card)) {
-	//debug($card);
+foreach ($cards as $key => $card) {
 ?>
+	<cneter>
+	<table class="pure-table pure-table-horizontal">
+		<thead>
+			<tr>
+				<th>Card ID</th>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Type</th>
+				<th>Position</th>
+				<th>Company</th>
+				<th>Email</th>
+				<th>Mobile</th>
+				<th>Phone</th>
+			</tr>
+		</thead>
 
-<cneter>
-<table class="pure-table pure-table-horizontal">
-	<thead>
-		<tr>
-			<th>Card ID</th>
-			<th>Name</th>
-			<th>Gender</th>
-			<th>Type</th>
-			<th>Position</th>
-			<th>Company</th>
-			<th>Email</th>
-			<th>Mobile</th>
-			<th>Phone</th>
-		</tr>
-	</thead>
-
-	<tbody>
-		<tr>
-			<?php
-			foreach ($card as $key => $value) {
-				echo '<td>'.$value.'</td>'."\n";
-			}
-			?>
-		</tr>
-	</tbody>
-</table>
-</cneter>
-
-<?php
-} elseif (isset($cards)) {
-	foreach ($cards as $key => $card) {
-	?>
-
-<cneter>
-<table class="pure-table pure-table-horizontal">
-	<thead>
-		<tr>
-			<th>Card ID</th>
-			<th>Name</th>
-			<th>Gender</th>
-			<th>Type</th>
-			<th>Position</th>
-			<th>Company</th>
-			<th>Email</th>
-			<th>Mobile</th>
-			<th>Phone</th>
-		</tr>
-	</thead>
-
-	<tbody>
-		<tr>
-			<?php
-			foreach ($card as $key => $value) {
-				echo '<td>'.$value.'</td>'."\n";
-			}
-			?>
-		</tr>
-	</tbody>
-</table>
-</cneter>
-
+		<tbody>
+			<tr>
+				<?php
+				foreach ($card as $key => $value) {
+					echo '<td>'.$value.'</td>'."\n";
+				}
+				?>
+			</tr>
+		</tbody>
+	</table>
+	</cneter>
 	<?php
 	}
-}
-
 ?>
