@@ -59,23 +59,22 @@ class CardsController extends AppController {
 	* @function name:	public function show()
 	* @description:		This function renders homepage.
 	* @related issues:	QH-1
-	* @param:			string $rid
-	* @param:			string $locale
-	* @return:			array $offers
+	* @param:			string $input
+	* @return:			void
 	* @author:			Don Hsieh
 	* @since:			10/01/2013
 	* @last modified: 	10/04/2013
 	* @called by:		front end
 	*/
-	public function show($id=null) {
-		if (empty($id)) $id = @$this->request->params['cardId'];
-		if (is_numeric($id)) {
-			$card = $this->Card->getCard($id);
-			//debug($card);//exit;
-			//$this->set('card', $card);
+	public function show($input=null) {
+		if (empty($input)) $input = @$this->request->params['input'];
+		if (is_numeric($input)) {
+			$cardId = $input;
+			$card = $this->Card->getCard($cardId);
 			$cards[0] = $card;
-		} elseif (isset($id)) {
-			$cards = $this->User->getCardsByUsername($id);
+		} elseif (is_string($input)) {
+			$username = $input;
+			$cards = $this->User->getCardsByUsername($username);
 		}
 		$this->set('cards', $cards);
 	}
