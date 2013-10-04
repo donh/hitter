@@ -60,11 +60,12 @@
 *					 'us_shopzilla_atoms', 'us_shopzilla_merchants', 'us_shopzilla_offers',
 *					 and 'us_title_feature_md5s' tables.
 * @related issues:	WW-405
+* @related issues:	WW-772
 * @param:			void
 * @return:			void
 * @author:			Don Hsieh
 * @since:			01/22/2013
-* @last modified: 	03/21/2013
+* @last modified: 	10/03/2013
 * @called by:		
 */
 class Logging {

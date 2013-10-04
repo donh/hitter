@@ -16,13 +16,14 @@ array(
 */
 
 if (isset($card)) {
+	debug($card);
 ?>
 
 <cneter>
 <table class="pure-table pure-table-horizontal">
 	<thead>
 		<tr>
-			<th>ID</th>
+			<th>Card ID</th>
 			<th>Name</th>
 			<th>Gender</th>
 			<th>Type</th>
@@ -55,7 +56,7 @@ if (isset($card)) {
 <table class="pure-table pure-table-horizontal">
 	<thead>
 		<tr>
-			<th>ID</th>
+			<th>Card ID</th>
 			<th>Name</th>
 			<th>Gender</th>
 			<th>Type</th>
