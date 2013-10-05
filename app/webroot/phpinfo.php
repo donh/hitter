@@ -32,6 +32,19 @@
 		echo 'pusher = '.$pusher.'<br>';
 		echo 'pwd = '.$pwd.'<br>';
 		echo 'pwd = '.$pwd.'<br>';
+
+
+		$log = new Logging();
+		// set path and name of log file (optional)
+		$log->lfile(TMP.'logs'.DS.'realtime.log');
+
+		$log->lwrite('$site = '.$site);
+		$log->lwrite('$method = '.$method);
+		$updates = json_decode($json, true);
+		$log->lwrite('$updates = '.print_r($updates, true));
+		$log->lwrite('Redirecting to ProcessFacebookUserRealTimeUpdatesController...');
+		// close log file
+		$log->lclose();
 	}
 
 	$gitPullResult = `git pull`;
