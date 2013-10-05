@@ -16,6 +16,7 @@ $hitterDescription = __d('hitter_dev', 'Quick Hitter: the almighty electronic bu
 	</title>
 	<!--
 	<link rel="stylesheet" type="text/css" href="css/pure-min.css">
+	
 	-->
 	<?php
 		//echo $this->Html->meta('icon');
