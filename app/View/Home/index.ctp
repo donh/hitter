@@ -4,46 +4,82 @@ if (!Configure::read('debug')):
 endif;
 App::uses('Debugger', 'Utility');
 ?>
-<center><h2>Hello World!</h2></center>
-<center><h3>Quick Hitter</h3></center>
+<center><h2>Quick Hitter</h2></center>
 <center><a href="/phpinfo.php">phpinfo</a></center>
 
 
 	<div class="pure-u-1-3">
 	</div>
 	<div class="pure-u-1-3">
-	<form class="pure-form pure-form-stacked">
+		<?php
+		/*
+		echo $this->Form->create(
+			'Card',
+			array(
+				'id' => 'CardsAddForm',
+				'url' => '/cards/add',
+				'type' => 'post'
+			)
+		);
+		echo $this->Form->input('username');   //text
+		echo $this->Form->end('Finish');
+		*/
+		
+		?>
+	<form class="pure-form pure-form-stacked" id="CardsAddForm2" method="post" action="/cards/add">
 		<fieldset>
 			<legend>Add My Business Card</legend>
 
 			<label for="name">Name</label>
-			<input id="name" type="email" placeholder="Name">
+			<input id="name" type="" placeholder="Name" name="data[Card][name]">
+			<!--
+			<input name="data[Card][username]" type="text" id="CardUsername">
+			-->
 
 			<label for="position">Position</label>
-			<input id="position" type="email" placeholder="Position">
+			<input id="position" type="" placeholder="Position" name="data[Card][position]">
 
 			<label for="company">Company</label>
-			<input id="company" type="email" placeholder="Company">
+			<input id="company" type="" placeholder="Company" name="data[Card][company]">
 
 			<label for="email">Email</label>
-			<input id="email" type="email" placeholder="Email">
+			<input id="email" type="email" placeholder="Email" name="data[Card][email]">
 
 			<label for="mobile">Mobile</label>
-			<input id="mobile" type="email" placeholder="Mobile">
+			<input id="mobile" type="" placeholder="Mobile" name="data[Card][mobile]">
 
+			<label for="phone">Phone</label>
+			<input id="phone" type="" placeholder="Phone" name="data[Card][phone]">
+<!--
 			<label for="password">Password</label>
-			<input id="password" type="password" placeholder="Password">
-
-			<label for="sex">Sex</label>
-			<select id="sex">
+			<input id="password" type="password" placeholder="Password" name="data[Card][password]">
+-->
+			<label for="gender">Gender</label>
+			<select id="gender" name="data[Card][gender]">
 				<option>M</option>
 				<option>F</option>
+			</select>
+
+			<label for="type">Type</label>
+			<select id="type" name="data[Card][type]">
+				<option>Analyst</option>
+				<option>Banker</option>
+				<option>Consultant</option>
+				<option>Designer</option>
+				<option>Doctor</option>
+				<option>Engineer</option>
+				<option>Lawyer</option>
+				<option>Manager</option>
+				<option>Sales</option>
 			</select>
 
 			<button type="submit" class="pure-button pure-button-primary">Submit</button>
 		</fieldset>
 	</form>
 
+		<?php
+			//echo $this->Form->end();
+		?>
 	</div>
 	<div class="pure-u-1-3">
 	</div>
