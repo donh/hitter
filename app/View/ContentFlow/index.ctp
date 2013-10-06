@@ -1,4 +1,5 @@
 <?php
+echo $this->Html->css('contentflow');
 echo $this->Html->script('contentflow');
 ?>
 

@@ -22,8 +22,8 @@ $hitterDescription = __d('hitter_dev', 'Quick Hitter: the almighty electronic bu
 		//echo $this->Html->meta('icon');
 
 		//echo $this->Html->css('cake.generic');
-		//echo $this->Html->css('base-min.css');
-		echo $this->Html->css('pure-min.css');
+		//echo $this->Html->css('base-min');
+		echo $this->Html->css('pure-min');
 		// <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
 		echo $this->Html->script('yui-min');
 		// <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
