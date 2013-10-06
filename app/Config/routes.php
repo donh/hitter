@@ -28,7 +28,7 @@
  */
 	
 
-	Router::connect("/:input", array(
+	Router::connect("/show/:input", array(
 		"controller" => "cards",
 		"action" => "show"
 	));
