@@ -42,6 +42,7 @@
 	$serverName = strtolower($_SERVER["SERVER_NAME"]);
 	$serverSubdomain = str_replace('.worthii.com', '', $serverName);
 	error_log('$serverName = '.$serverName."\n", 3, $github_log);
+	echo 'serverName = '.$serverName.'<br>';
 
 	// determine if we need to perform a git pull based on the pushed branch and the name of the hosting server
 	//$performPull = false;
@@ -71,6 +72,9 @@
 		$message .= "chmod +x ../Console/cake\n";
 		$message .= "Bash Exit.";
 		error_log($message."\n", 3, $github_log);
-		//echo str_replace("\n", '<br />', $message);
-	} else error_log('Prequisites not met. Pull not performed.'."\n", 3, $github_log);
+		echo str_replace("\n", '<br />', $message);
+	} else {
+		error_log('Prequisites not met. Pull not performed.'."\n", 3, $github_log);
+		echo 'Prequisites not met. Pull not performed.';
+	}
 ?>
