@@ -10,7 +10,9 @@
 	* @last modified: 	10/07/2013
 	* @called by:		Github Webhook
 	*/
-	echo date(DATE_RFC822).'<br>';//exit;
+	$now = gmdate('Y-m-d H:i:s', strtotime('now') + 8*3600)."\n";
+	//echo date(DATE_RFC822).'<br>';//exit;
+	echo $now.'<br>';//exit;
 	$me = `whoami`;
 	echo 'whoami = '.$me.'<br>';
 	$pwd = `pwd`;
@@ -18,7 +20,7 @@
 
 	//the request payload from github
 	if (array_key_exists('payload', $_REQUEST)) {
-		$now = gmdate('Y-m-d H:i:s', strtotime('now') + 8*3600)."\n";
+		//$now = gmdate('Y-m-d H:i:s', strtotime('now') + 8*3600)."\n";
 		$github_log = '/var/www/dev/app/tmp/logs/github.log';
 		error_log($now, 3, $github_log);
 		$payload = array();
